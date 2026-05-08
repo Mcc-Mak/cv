@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Mak Chun Chi · Analyst Programmer Portfolio</title>
+  <!-- Font Awesome 6 (free icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eef2f5;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.5;
+      color: #1a2c3e;
+      padding: 2rem 1.5rem;
+    }
+
+    /* smooth container card */
+    .resume-card {
+      max-width: 1280px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 28px;
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.02);
+      overflow: hidden;
+      transition: all 0.2s ease;
+    }
+
+    /* inner padding */
+    .resume-inner {
+      padding: 2.2rem 2rem;
+    }
+
+    /* two column layout */
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2.5rem;
+      margin-top: 0.5rem;
+    }
+
+    /* left column styling */
+    .left-panel {
+      border-right: 1px solid #e2e8f0;
+      padding-right: 1.8rem;
+    }
+
+    .right-panel {
+      overflow: visible;
+    }
+
+    /* header area */
+    .name-title {
+      margin-bottom: 1.8rem;
+      border-bottom: 3px solid #2c7da0;
+      display: inline-block;
+      padding-bottom: 0.2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #0b3b4f;
+      margin-bottom: 0.25rem;
+    }
+
+    .job-badge {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #2c7da0;
+      background: #e6f4fa;
+      display: inline-block;
+      padding: 0.2rem 1rem;
+      border-radius: 30px;
+      margin-top: 0.25rem;
+    }
+
+    /* contact list */
+    .contact-info {
+      margin: 1.8rem 0 2rem 0;
+      background: #f9fbfd;
+      border-radius: 24px;
+      padding: 1.2rem 1.2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      color: #2c4b5f;
+      word-break: break-word;
+    }
+
+    .contact-item i {
+      width: 1.4rem;
+      color: #2c7da0;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    .contact-item a {
+      color: #1e5a6f;
+      text-decoration: none;
+      border-bottom: 1px dotted #bdd3e0;
+      transition: 0.2s;
+    }
+
+    .contact-item a:hover {
+      color: #0f4a5e;
+      border-bottom-color: #2c7da0;
+    }
+
+    /* section styles */
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #1f6e8c;
+      border-left: 4px solid #2c7da0;
+      padding-left: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .skill-category {
+      margin-bottom: 1rem;
+    }
+
+    .skill-category strong {
+      font-weight: 700;
+      color: #0b3b4f;
+      display: inline-block;
+      min-width: 100px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    .skill-tags {
+      display: inline;
+      font-size: 0.9rem;
+      color: #2d4e66;
+    }
+
+    .skill-tags span {
+      display: inline-block;
+      background: #eef3f7;
+      padding: 0.2rem 0.6rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      margin: 0.2rem 0.2rem 0 0;
+    }
+
+    .skill-line {
+      margin-bottom: 0.7rem;
+    }
+
+    /* edu & project list */
+    .education-item, .cert-item, .project-item {
+      margin-bottom: 1rem;
+    }
+
+    .edu-title {
+      font-weight: 700;
+      color: #1c5a72;
+      font-size: 0.95rem;
+    }
+
+    .edu-date {
+      font-size: 0.75rem;
+      color: #6a8e9e;
+      display: block;
+      margin-top: 0.1rem;
+    }
+
+    .desc-text {
+      font-size: 0.85rem;
+      color: #2f586f;
+      margin-top: 0.2rem;
+      line-height: 1.4;
+    }
+
+    /* right panel experience */
+    .experience-item {
+      margin-bottom: 2rem;
+    }
+
+    .exp-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.5rem;
+    }
+
+    .exp-role {
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: #124a62;
+    }
+
+    .exp-company {
+      font-weight: 600;
+      color: #2f7a9b;
+      font-size: 0.95rem;
+    }
+
+    .exp-date {
+      font-size: 0.8rem;
+      color: #6c8d9e;
+      background: #f0f5f8;
+      padding: 0.2rem 0.7rem;
+      border-radius: 30px;
+    }
+
+    .exp-list {
+      margin-top: 0.65rem;
+      padding-left: 1.2rem;
+    }
+
+    .exp-list li {
+      margin-bottom: 0.55rem;
+      font-size: 0.9rem;
+      color: #2c4b5f;
+    }
+
+    .exp-list li::marker {
+      color: #2c7da0;
+      font-size: 0.8rem;
+    }
+
+    /* achievement list */
+    .achievement-list {
+      padding-left: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .achievement-list li {
+      margin-bottom: 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    hr {
+      margin: 1rem 0;
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, #e0eef4, transparent);
+    }
+
+    /* responsive */
+    @media (max-width: 850px) {
+      .two-columns {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .left-panel {
+        border-right: 0;
+        padding-right: 0;
+      }
+      .resume-inner {
+        padding: 1.5rem;
+      }
+      body {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0.2in;
+      }
+      .resume-card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+      }
+      .contact-item a {
+        text-decoration: none;
+        color: black;
+      }
+      .exp-date, .job-badge {
+        background: #eaeef2;
+        print-color-adjust: exact;
+      }
+      .skill-tags span {
+        border: 1px solid #ccc;
+        background: #f3f6f8;
+      }
+    }
+
+    /* icons for lists */
+    .fa-li {
+      margin-right: 0.3rem;
+    }
+    .summary-text {
+      background: #f9fefc;
+      padding: 1rem 1.2rem;
+      border-radius: 20px;
+      margin-bottom: 1.8rem;
+      border: 1px solid #e2f0f5;
+      font-size: 0.95rem;
+      color: #1e4d64;
+    }
+  </style>
+</head>
+<body>
+<div class="resume-card">
+  <div class="resume-inner">
+    <!-- header with name and title -->
+    <div class="name-title">
+      <h1>Mak Chun Chi</h1>
+      <div class="job-badge">
+        <i class="fas fa-code" style="margin-right: 6px;"></i> Analyst Programmer · 6+ years
+      </div>
+    </div>
+
+    <div class="two-columns">
+      <!-- LEFT COLUMN: contact, skills, education, certifications, academic projects -->
+      <div class="left-panel">
+        <!-- contact -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>6340 0077</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:martinmcc5804@gmail.com">martinmcc5804@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/Mcc-Mak/cv" target="_blank" rel="noopener noreferrer">github.com/Mcc-Mak/cv</a>
+          </div>
+        </div>
+
+        <!-- Technical Skills (detailed from CV table) -->
+        <div class="section">
+          <div class="section-title"><i class="fas fa-tools" style="margin-right: 8px;"></i> Technical Skills</div>
+          <div class="skill-line"><strong>Languages</strong> <span class="skill-tags"><span>C#</span> <span>Java</span> <span>JavaScript</span> <span>HTML/CSS</span> <span>PHP</span></span></div>
+          <div class="skill-line"><strong>Frameworks</strong> <span class="skill-tags"><span>.NET</span> <span>Spring Boot</span> <span>React</span> <span>Node.js</span> <span>Express</span></span></div>
+          <div class="skill-line"><strong>Databases</strong> <span class="skill-tags"><span>MySQL</span></span></div>
+          <div class="skill-line"><strong>Containers</strong> <span class="skill-tags"><span>Docker</span></span></div>
+          <div class="skill-line"><strong>Other</strong> <span class="skill-tags"><span>Socket programming</span> <span>REST APIs</span> <span>input validation</span> <span>root cause analysis</span> <span>technical documentation</span> <span>WordPress</span></span></div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+          <div class="section-title"><i class="fas fa-graduation-cap"></i> Education</div>
+          <div class="education-item">
+            <div class="edu-title">Bachelor of Engineering in Electrical Engineering</div>
+            <div class="edu-date">The Hong Kong Polytechnic University · 2014 – 2016</div>
+          </div>
+          <div class="education-item">
+            <div class="edu-title">Higher Diploma in Electrical Engineering</div>
+            <div class="edu-date">The Hong Kong Polytechnic University · 2012 – 2014</div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="section">
+          <div class="section-title"><i class="fas fa-certificate"></i> Certifications</div>
+          <div class="cert-item">
+            <i class="fas fa-network-wired" style="color:#2c7da0; width: 1.2rem;"></i> CompTIA Network+ (N10-009) – 2026
+          </div>
+        </div>
+
+        <!-- Academic Projects -->
+        <div class="section">
+          <div class="section-title"><i class="fas fa-microchip"></i> Academic Projects</div>
+          <div class="project-item">
+            <div class="edu-title">Bachelor's Degree · Solar Energy Optimization</div>
+            <div class="desc-text">Optimised solar panel efficiency through tracking & load analysis (PolyU, 2015–2016).</div>
+          </div>
+          <div class="project-item">
+            <div class="edu-title">Higher Diploma · Embedded Systems</div>
+            <div class="desc-text">Built a driverless car via line-follower sensors and microcontroller logic (2013–2014).</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: professional summary, experience, key achievements -->
+      <div class="right-panel">
+        <!-- Professional summary -->
+        <div class="summary-text">
+          <i class="fas fa-user-astronaut" style="margin-right: 8px; color:#2c7da0;"></i>
+          <strong>Analyst Programmer</strong> with <strong>6+ years of experience</strong> in full‑stack web development (C# .NET, Java Spring Boot, LAMP, React/Express/Node.js), desktop applications, and system maintenance. Specialised in <strong>earthquake information systems</strong> for the Hong Kong Observatory. Proven ability in root cause analysis, technical documentation, and Docker containerization.
+        </div>
+
+        <!-- Employment / Project Experience -->
+        <div class="section">
+          <div class="section-title"><i class="fas fa-briefcase"></i> Employment & Project Experience</div>
+          
+          <!-- IT Solutions Ltd. (Hong Kong Observatory) -->
+          <div class="experience-item">
+            <div class="exp-header">
+              <div>
+                <span class="exp-role">Analyst Programmer</span> 
+                <span class="exp-company">@ IT Solutions Ltd. (Hong Kong Observatory)</span>
+              </div>
+              <div class="exp-date">Jun 2025 – Jun 2026</div>
+            </div>
+            <ul class="exp-list">
+              <li>Developed a <strong>JavaScript web application</strong> using <strong>React, Express, and Node.js</strong>, deployed in <strong>Docker</strong>, to collect and display locally felt earthquake reports. Ensured secure API access within an internal network protected by organisation firewall.</li>
+              <li>Same system maintenance and documentation responsibilities as above — see Kelly Services role (user guides, root cause analysis, preventive fixes).</li>
+            </ul>
+          </div>
+
+          <!-- Kelly Services (Hong Kong Observatory) -->
+          <div class="experience-item">
+            <div class="exp-header">
+              <div>
+                <span class="exp-role">Analyst Programmer</span> 
+                <span class="exp-company">@ Kelly Services (Hong Kong Observatory)</span>
+              </div>
+              <div class="exp-date">Jun 2022 – Jun 2025</div>
+            </div>
+            <ul class="exp-list">
+              <li>Built a full‑stack web application using <strong>HTML, JavaScript, CSS, and PHP (LAMP)</strong> running inside <strong>Docker</strong> to disseminate earthquake data. Implemented client‑side & server‑side input validation.</li>
+              <li>Handled ad‑hoc technical tasks, performed <strong>root cause analysis</strong>, and implemented preventive fixes for recurring issues.</li>
+              <li>Managed <strong>documentation</strong> on <strong>WordPress</strong> (Docker) and created <strong>user guides</strong> for 3+ internal applications, adopted as team standard.</li>
+            </ul>
+          </div>
+
+          <!-- PCCW – Solution Developer -->
+          <div class="experience-item">
+            <div class="exp-header">
+              <div>
+                <span class="exp-role">Solution Developer</span> 
+                <span class="exp-company">@ PCCW</span>
+              </div>
+              <div class="exp-date">Sep 2019 – Jun 2022</div>
+            </div>
+            <ul class="exp-list">
+              <li>Developed a web‑based <strong>booking appointment system</strong> using <strong>C# .NET</strong>, enabling real‑time availability validation, rescheduling & cancellation.</li>
+              <li>Built a <strong>Windows Forms application</strong> in C# to serve as a query interface for backend databases.</li>
+              <li>Implemented a <strong>multithreaded socket server</strong> in <strong>Java</strong> for concurrent client connections in real‑time data exchange.</li>
+              <li>Collaborated on a web‑based <strong>workflow management system</strong> using <strong>Java Spring Boot</strong>, supporting dynamic process definitions and role‑based task assignment.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Key Achievements -->
+        <div class="section">
+          <div class="section-title"><i class="fas fa-trophy"></i> Key Achievements</div>
+          <ul class="achievement-list">
+            <li><i class="fas fa-cloud-upload-alt" style="color:#2c7da0; width: 1.4rem;"></i> Migrated two legacy earthquake reporting systems to <strong>Docker‑based LAMP and MERN stacks</strong>, improving deployment consistency and maintainability.</li>
+            <li><i class="fas fa-chart-line" style="color:#2c7da0;"></i> Reduced recurring system incidents through <strong>proactive root cause analysis</strong> and preventive fixes, increasing platform reliability.</li>
+            <li><i class="fas fa-book-open" style="color:#2c7da0;"></i> Authored <strong>user guides for 3+ internal applications</strong>, adopted as the team documentation standard across multiple HKO projects.</li>
+          </ul>
+        </div>
+        
+        <!-- extra tiny spacer for harmony -->
+        <div style="height: 0.5rem;"></div>
+      </div>
+    </div>
+    <!-- subtle line + footnote with github repo reference -->
+    <hr>
+    <div style="font-size: 0.7rem; text-align: center; color: #8caebe; margin-top: 0.8rem;">
+      <i class="fab fa-github"></i> Portfolio & references: github.com/Mcc-Mak/cv · Based on Hong Kong Observatory earthquake systems & full‑stack expertise
+    </div>
+  </div>
+</div>
+</body>
+</html>
