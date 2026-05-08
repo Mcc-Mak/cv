@@ -1,5 +1,5 @@
 Mak Chun Chi  
-63400077 | martinmcc5804@gmail.com | GitHub: [https://github.com/Mcc-Mak/cv](https://github.com/Mcc-Mak/cv)
+63400077 | martinmcc5804@gmail.com | [GitHub Profile](https://mcc-mak.github.io/cv/)
 
 ---
 
