@@ -1,67 +1,103 @@
-Mak Chun Chi  
-63400077 | martinmcc5804@gmail.com | [GitHub Profile](https://mcc-mak.github.io/cv/)
+# Mak Chun Chi
+
+**Analyst Programmer · 6+ years experience**
 
 ---
 
-## PROFESSIONAL SUMMARY
+## Contact
 
-Analyst Programmer with **6+ years of experience** in full‑stack web development (C# .NET, Java Spring Boot, LAMP, React/Express/Node.js), desktop applications, and system maintenance. Specialised in **earthquake information systems** for the Hong Kong Observatory. Proven ability in root cause analysis, technical documentation, and Docker containerization.
+- 📞 +852 6340 0077
+- ✉️ [martinmcc5804@gmail.com](mailto:martinmcc5804@gmail.com)
+- 💻 [GitHub Portfolio](https://github.com/Mcc-Mak/cv)
+- 🛡️ [ISC2 CISSP Study Notes & Q&A](https://cisspmastery-s7psrqmw.manus.space/)
 
-## TECHNICAL SKILLS
+---
 
-| Category | Skills |
-|----------|--------|
-| Languages | C#, Java, JavaScript, HTML/CSS, PHP |
-| Frameworks | .NET, Spring Boot, React, Node.js, Express |
-| Databases | MySQL |
-| Containers | Docker |
-| Other | Socket programming, REST APIs, input validation, root cause analysis, technical documentation, WordPress |
+## Core Competencies
 
-## EMPLOYMENT / PROJECT EXPERIENCE
+- **Languages**: C#, Java, JavaScript, HTML5/CSS3, PHP
+- **Frameworks**: .NET, Spring Boot, React, Node.js, Express
+- **Databases**: MySQL, SQL Server
+- **DevOps & Tools**: Docker, Git, REST APIs, Socket Programming, WordPress
+- **Expertise**: Root Cause Analysis, Technical Documentation, Input Validation, Legacy Modernization
 
-### IT Solutions Ltd. (Hong Kong Observatory) – Analyst Programmer
-*Jun 2025 – Jun 2026*
+---
 
-- Developed a **JavaScript web application** using `React`, `Express`, and `Node.js`, deployed in `Docker`, to collect and display locally felt earthquake reports. Ensured secure API access within an internal network protected by organisation firewall.
-- *(Same system maintenance and documentation responsibilities as above – see Kelly Services role.)*
+## Education
 
-### Kelly Services (Hong Kong Observatory) – Analyst Programmer
+**Bachelor of Engineering in Electrical Engineering**  
+The Hong Kong Polytechnic University · 2014 – 2016
+
+**Higher Diploma in Electrical Engineering**  
+The Hong Kong Polytechnic University · 2012 – 2014
+
+---
+
+## Certifications
+
+- **CompTIA Network+ (N10-009)** – 2026
+
+## Certificate of Completion
+- **ISC2 CISSP (Udemy)** - 2026
+- CompTIA Networking+ (Udemy) – 2026
+
+---
+
+## Academic Projects
+
+**Solar Energy Optimization System (Bachelor Thesis)**  
+Optimised solar panel efficiency through load analysis and tracking algorithms (PolyU 2015-2016).
+
+**Embedded Line-follower Robot (Higher Diploma)**  
+Developed a driverless car using sensor fusion and microcontroller logic (PolyU 2013-2014).
+
+---
+
+## Professional Summary
+
+Analyst Programmer with **6+ years of full-stack development** and system maintenance expertise. Specialised in **C# .NET, Java Spring Boot, LAMP, React/Node.js**. For the past four years, built and maintained **earthquake information systems for the Hong Kong Observatory**, driving Docker containerisation, technical documentation, and root cause analysis to enhance platform reliability.
+
+---
+
+## Employment & Project Experience
+
+**Analyst Programmer @ IT Solutions Ltd. (Hong Kong Observatory)**  
+*Jul 2025 – Jun 2026*
+
+- Developed a **React + Express + Node.js** web application to collect and visualise locally felt earthquake reports, deployed with **Docker** inside a secured internal network.
+- Authored technical documentation and user guides; performed proactive root cause analysis and preventive fixes to reduce recurring incidents.
+
+**Analyst Programmer @ Kelly Services (Hong Kong Observatory)**  
 *Jun 2022 – Jun 2025*
 
-- Built a **full‑stack web application** using `HTML`, `JavaScript`, `CSS`, and `PHP (LAMP)` running inside `Docker` to disseminate earthquake data. Implemented client‑side and server‑side input validation.
-- Handled **ad‑hoc technical tasks**, performed **root cause analysis**, and implemented preventive fixes for recurring issues.
-- Managed **documentation** on `WordPress` (`Docker`) and created **user guides** for 3+ internal applications.
+- Built a full-stack earthquake data dissemination platform using **PHP/LAMP** stack running inside Docker; enforced client-side validation.
+- Led **root cause analysis (RCA)** initiatives and implemented preventive patches, significantly reducing recurrence of system failures.
+- Managed WordPress-based technical documentation hub; standardised user guides for 3 internal applications, adopted as team-wide reference.
 
-### PCCW – Solution Developer
+**Solution Developer @ PCCW**  
 *Sep 2019 – Jun 2022*
 
-- Developed a **web‑based booking appointment system** using `C# .NET`, enabling users to schedule, reschedule, and cancel appointments with real‑time availability validation.
-- Built a **Windows Forms application** in `C#` to serve as a query interface for backend databases.
-- Implemented a **multithreaded socket server** in `Java` for concurrent client connections in real‑time data exchange.
-- Collaborated on a **web‑based workflow management system** using `Java` and `Spring Boot`, supporting dynamic process definitions and role‑based task assignment.
+- Developed a web-based **booking appointment system** using **C# .NET**, supporting real-time availability validation, rescheduling, and cancellations.
+- Built a **Windows Forms** desktop application as a query interface for backend databases.
+- Implemented a **multithreaded socket server in Java** for concurrent client connections in real-time data exchange.
+- Collaborated on a **Spring Boot workflow management system**.
 
-## KEY ACHIEVEMENTS
+---
 
-- Migrated two legacy earthquake reporting systems to Docker‑based LAMP and MERN stacks.
-- Reduced recurring system incidents through proactive root cause analysis and preventive fixes.
-- Authored user guides for 3+ internal applications, adopted as team documentation standard.
+## Key Achievements
 
-## EDUCATION
+**Containerisation Migration**  
+Migrated two legacy earthquake reporting systems to **Docker + LAMP / MERN stacks**, improving deployment consistency and maintainability.
 
-**Bachelor of Engineering in Electrical Engineering** – The Hong Kong Polytechnic University  
-*2014 – 2016*
+**Reliability Improvement**  
+Reduced recurring system incidents through proactive monitoring and root cause analysis, enhancing HKO platform stability.
 
-**Higher Diploma in Electrical Engineering** – The Hong Kong Polytechnic University  
-*2012 – 2014*
+**Documentation Standardisation**  
+Authored comprehensive user guides and technical runbooks, becoming the internal team standard and reducing onboarding time.
 
-## ACADEMIC PROJECTS
+**Cybersecurity Upskilling**  
+Completed CompTIA Network+ and ISC2 CISSP core curriculum.
 
-**The Hong Kong Polytechnic University – Bachelor’s Degree** | *2015 – 2016*  
-- Optimised solar panel efficiency
+---
 
-**The Hong Kong Polytechnic University – Higher Diploma** | *2013 – 2014*  
-- Built a driverless car via line follower
-
-## CERTIFICATIONS
-
-- CompTIA Network+ (N10-009) – 2026
+*Online Portfolio: github.com/Mcc-Mak/cv · Full-stack Development · Earthquake Systems Specialist · Built on Hong Kong Observatory experience*
