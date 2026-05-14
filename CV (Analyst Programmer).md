@@ -8,7 +8,6 @@
 
 - 📞 +852 6340 0077
 - ✉️ [martinmcc5804@gmail.com](mailto:martinmcc5804@gmail.com)
-- 💻 [GitHub Portfolio](https://github.com/Mcc-Mak/cv)
 - 🛡️ [ISC2 CISSP Study Notes & Q&A](https://cisspmastery-s7psrqmw.manus.space/)
 
 ---
@@ -16,8 +15,8 @@
 ## Core Competencies
 
 - **Languages**: C#, Java, JavaScript, HTML5/CSS3, PHP
-- **Frameworks**: .NET, Spring Boot, React, Node.js, Express
-- **Databases**: MySQL, SQL Server
+- **Frameworks**: .NET (MVC), Spring Boot, MERN (React, Node.js, Express), LAMP
+- **Databases**: MySQL (~MariaDB), SQL Server
 - **DevOps & Tools**: Docker, Git, REST APIs, Socket Programming, WordPress
 - **Expertise**: Root Cause Analysis, Technical Documentation, Input Validation, Legacy Modernization
 
