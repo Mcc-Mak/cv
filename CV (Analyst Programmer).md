@@ -45,10 +45,10 @@ The Hong Kong Polytechnic University · 2012 – 2014
 
 ## Academic Projects
 
-**Solar Energy Optimization System (Bachelor Thesis)**  
+**Solar Energy Optimization System (Bachelor - Final Year Project)**  
 Optimised solar panel efficiency through load analysis and tracking algorithms (PolyU 2015-2016).
 
-**Embedded Line-follower Robot (Higher Diploma)**  
+**Embedded Line-follower Robot (Higher Diploma - Final Year Project)**  
 Developed a driverless car using sensor fusion and microcontroller logic (PolyU 2013-2014).
 
 ---
