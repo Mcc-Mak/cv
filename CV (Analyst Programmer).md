@@ -9,6 +9,7 @@
 - 📞 +852 6340 0077
 - ✉️ [martinmcc5804@gmail.com](mailto:martinmcc5804@gmail.com)
 - 🛡️ [ISC2 CISSP Study Notes & Q&A](https://cisspmastery-s7psrqmw.manus.space/) (Accreditation to `Deepseek` & `Manus`)
+- 🛡️ [CompTIA Network+ (N10-009) Study Notes](https://comptianotes-qhf3shst.manus.space/) (Accreditation to `Deepseek` & `Manus`)
 
 ---
 
